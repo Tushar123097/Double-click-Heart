@@ -22,8 +22,7 @@ const createHeart = (e) => {
 };
 
 loveMe.addEventListener("click", (e) => {
-  // you can use dblclick: https://developer.mozilla.org/en-US/docs/Web/API/Element/dblclick_event
-  if (clickTime === 0) clickTime = new Date().getTime();
+ if (clickTime === 0) clickTime = new Date().getTime();
   else {
     if (new Date().getTime() - clickTime < 800) {
       createHeart(e);
